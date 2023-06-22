@@ -9,7 +9,14 @@ Habit Tracker is a mobile app that helps you track and manage your daily habits.
 
 ## Screenshots
 
-Include some screenshots of your app to give users a visual preview.
+![Screenshot_1](https://github.com/davidjosipovic/habit-tracker/assets/84419254/00378203-10fb-4333-b473-56a462bde9b6)
+![Screenshot_2](https://github.com/davidjosipovic/habit-tracker/assets/84419254/49c15a11-8fd7-4cdd-95ef-6b2f4e16b5d2)
+![Screenshot_3](https://github.com/davidjosipovic/habit-tracker/assets/84419254/f0cd52a5-97df-4bb7-8149-cb094f4421a9)
+![Screenshot_4](https://github.com/davidjosipovic/habit-tracker/assets/84419254/4bedd9c5-629f-4ffa-9a41-bffb94985542)
+
+
+
+
 
 ## Getting Started
 
