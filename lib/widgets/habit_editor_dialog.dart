@@ -7,6 +7,7 @@ class HabitEditorDialog extends StatefulWidget {
   const HabitEditorDialog({Key? key, this.habitName, this.initialValue}) : super(key: key);
 
   @override
+  // ignore: library_private_types_in_public_api
   _HabitEditorDialogState createState() => _HabitEditorDialogState();
 }
 

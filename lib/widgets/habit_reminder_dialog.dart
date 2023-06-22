@@ -9,6 +9,7 @@ class HabitReminderDialog extends StatefulWidget {
   const HabitReminderDialog({Key? key, this.initialValue, required this.habitName}) : super(key: key);
 
   @override
+  // ignore: library_private_types_in_public_api
   _HabitReminderDialogState createState() => _HabitReminderDialogState();
 }
 
@@ -29,7 +30,7 @@ class _HabitReminderDialogState extends State<HabitReminderDialog> {
 
   Future<void> _initializeNotifications() async {
     _notificationsPlugin = FlutterLocalNotificationsPlugin();
-    final initializationSettingsAndroid =
+    const initializationSettingsAndroid =
         AndroidInitializationSettings('app_icon');
     final initializationSettings = InitializationSettings(
       android: initializationSettingsAndroid,
@@ -48,11 +49,12 @@ class _HabitReminderDialogState extends State<HabitReminderDialog> {
       _selectedTime.minute,
     );
     await _scheduleNotification(selectedDateTime);
+    // ignore: use_build_context_synchronously
     Navigator.pop(context, selectedDateTime);
   }
 
   Future<void> _scheduleNotification(DateTime selectedDateTime) async {
-    final androidPlatformChannelSpecifics = AndroidNotificationDetails(
+    const androidPlatformChannelSpecifics = AndroidNotificationDetails(
       'habit_tracker_channel',
       'Habit Tracker',
       importance: Importance.high,
@@ -68,6 +70,7 @@ class _HabitReminderDialogState extends State<HabitReminderDialog> {
       tz.TZDateTime.from(selectedDateTime, tz.local),
       notificationDetails,
       uiLocalNotificationDateInterpretation: UILocalNotificationDateInterpretation.absoluteTime,
+      // ignore: deprecated_member_use
       androidAllowWhileIdle: true,
       matchDateTimeComponents: DateTimeComponents.time,
     );
